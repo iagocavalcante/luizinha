@@ -1,0 +1,28 @@
+.InputIcon {
+  display: flex;
+  border-radius: 35px;
+  background-color: #fdecec;
+  width: 70vw;
+  height: 60px;
+  margin-top: 40px;
+}
+
+.InputIcon-icon {
+  align-self: flex-start;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.InputIcon-input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 24px;
+  color: #ff1510;
+  font-weight: 400;
+}
+
+.InputIcon-input:focus {
+  outline: none;
+}
