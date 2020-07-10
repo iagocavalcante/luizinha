@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
 .App {
   padding: 15px;
   text-align: center;
@@ -27,7 +32,16 @@
 
 .App-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.App-card-list {
+  width: 90vw;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 70px;
 }
 
 .App-link {

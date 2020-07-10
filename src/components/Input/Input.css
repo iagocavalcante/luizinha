@@ -1,5 +1,6 @@
 .InputIcon {
   display: flex;
+  align-self: center;
   border-radius: 35px;
   background-color: #fdecec;
   width: 70vw;
