@@ -7,17 +7,11 @@ import responseCharacters from './personagens.json';
 
 function App() {
   const [characters, setCharacters] = useState([])
-  const [result, setResult] = useState([])
   
   useEffect(() => {
     const { data: { results } } = responseCharacters
-    setResult(results)
-  }, [result])
-  
-  useEffect(() => {
-    const mute = result.map(r => ({ ...r, liked: false }))
-    setCharacters(mute)
-  }, [result])
+    setCharacters(results)
+  }, [])
 
   return (
     <div className="App">

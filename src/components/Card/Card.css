@@ -8,6 +8,7 @@
 .Card-poster {
   width: 100%;
   height: 80%;
+  border-bottom: 4px solid #ff1510;
 }
 .Card-poster img {
   width: 100%;
@@ -26,10 +27,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: #404040;
 }
 
 .Card-info h3:hover {
-  color: red;
+  color: #ff1510;
 }
 
 .Card-info .icon {
@@ -51,7 +53,7 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
-  background-image: url('./../../assets/heart-empty.svg');
+  background-image: url('./../../assets/heart.svg');
   background-repeat: no-repeat;
 }
 
@@ -59,5 +61,5 @@
 .icon-fill:focus {
   width: 25px;
   height: 25px;
-  background-image: url('./../../assets/heart.svg');
+  background-image: url('./../../assets/heart-empty.svg');
 }
