@@ -13,11 +13,21 @@ function App() {
     setCharacters(results)
   }, [])
 
+  const handler = (searchTerm) => {
+    if (!!searchTerm) {
+      const findedCharacters = characters.filter(character => character.name.startsWith(searchTerm))
+      setCharacters(findedCharacters)
+      return
+    }
+    const { data: { results } } = responseCharacters
+    setCharacters(results)
+  }
+
   return (
     <div className="App">
       <Header />
       <main className="App-center">
-        <Input placeholder={'Procure por heróis'} type={'text'} />
+        <Input placeholder={'Procure por heróis'} type={'text'} handler={handler} />
         <section className="App-card-list">
           {
             characters && characters.map( character => 
